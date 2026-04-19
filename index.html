@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Once Upon A Time</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Once Upon A Time</h1>
+  <p>Homemade Baked Goods & Clothing</p>
+</header>
+
+<main class="container">
+
+  <!-- Filter Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-category="all">✨ All</button>
+    <button class="tab" data-category="baked">🍞 Baked Goods</button>
+    <button class="tab" data-category="clothing">👕 Clothing</button>
+    <button class="tab" data-category="desserts">🍪 Desserts</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid">
+
+    <!-- Baked Goods -->
+    <div class="card baked" data-product="bread" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80')">
+      <div class="card-overlay">
+        <h3>Custom Bread Designs</h3>
+        <p>Artisan breads crafted with creativity.</p>
+      </div>
+    </div>
+    <div class="card baked" data-product="brownieCups" style="background-image: url('https://tasting-thyme.com/wp-content/uploads/2024/05/IMG_7212.jpg')">
+      <div class="card-overlay">
+        <h3>Brownie Cups</h3>
+        <p>Rich chocolate treats in perfect portions.</p>
+      </div>
+    </div>
+    <div class="card baked" data-product="jam" style="background-image: url('https://www.leftyspoon.com/wp-content/uploads/2014/08/how-to-make-homemade-jam-8-1024x681.jpg')">
+      <div class="card-overlay">
+        <h3>Jam</h3>
+        <p>Homemade jams with fresh ingredients.</p>
+      </div>
+    </div>
+
+    <!-- Clothing -->
+    <div class="card clothing" data-product="bibs" style="background-image: url('https://s.turbifycdn.com/aah/yhst-2003691491864/vintage-baby-bib-with-bunny-embroidery-and-red-checked-trim-56.jpg')">
+      <div class="card-overlay">
+        <h3>Bibs</h3>
+        <p>Soft and durable for everyday use.</p>
+      </div>
+    </div>
+    <div class="card clothing" data-product="babyShirts" style="background-image: url('https://i5.walmartimages.com/seo/Honest-Baby-Clothing-Baby-Toddler-Boy-or-Girl-Gender-Neutral-Organic-Cotton-Short-Sleeve-T-Shirts-8-Pack-Newborn-5T_1dbed5c8-4cb4-48d1-bc94-545b315df186.45c2c5bb7ea9687cee3e0fc1a7e0c2fe.jpeg')">
+      <div class="card-overlay">
+        <h3>Baby Shirts</h3>
+        <p>Comfortable and adorable designs.</p>
+      </div>
+    </div>
+    <div class="card clothing" data-product="socks" style="background-image: url('https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=600&q=80')">
+      <div class="card-overlay">
+        <h3>Socks</h3>
+        <p>Cozy, warm, and handmade.</p>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="card desserts" data-product="brownies" style="background-image: url('https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=600&q=80')">
+      <div class="card-overlay">
+        <h3>Brownies</h3>
+        <p>Fudgy and delicious classics.</p>
+      </div>
+    </div>
+    <div class="card desserts" data-product="cookies" style="background-image: url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80')">
+      <div class="card-overlay">
+        <h3>Cookies</h3>
+        <p>Freshly baked in many flavors.</p>
+      </div>
+    </div>
+    <div class="card desserts" data-product="cupcakes" style="background-image: url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80')">
+      <div class="card-overlay">
+        <h3>Cupcakes</h3>
+        <p>Perfect for celebrations.</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<div id="modals-container"></div>
+
+<button class="cart-btn">
+  🛒 <span id="cart-badge" style="display:none">0</span>
+</button>
+
+<script type="module" src="Scripts/controller.js"></script>
+
+</body>
+</html>
